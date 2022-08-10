@@ -1,0 +1,119 @@
+
+
+/* Banner */
+
+.banner {
+    width: 100%; /* não precisaria */
+    height: 600px;
+    background-image: url(/assets/image-e-players/banner_pilotos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blueviolet;
+}
+
+.banner .banner-info-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+}
+
+.banner .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 230px;
+     
+}
+
+.banner .banner-info .info-title {
+    color: white;
+    font-size:60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner .banner-info .info-text {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.banner .banner-info .info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: #E71A3F;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto; 
+}
+
+.patrocinados {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1C21;
+}
+
+.patrocinados-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    background-color: #1E1C21;
+    color: white;
+    padding: 30px 0;
+
+}
+
+.produtos-titulo {
+    font-family: 'Roboto-Medium';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 230px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #000000, #1E1C21);
+}
+
+.card .card-title {
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;
+}
+
+.card .card-price {
+    font-size: 1.4rem;
+    font-family: 'Roboto-Medium';
+}
+
+.card .btn-buy {
+    background-color: #C31616;
+    width: 100%;
+    text-transform: uppercase;
+    border: 1 px solid #C31616;
+}
+
+@media all and (max-width: 991px) {
+
+.patrocinados {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+   
+    }
