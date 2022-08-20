@@ -24,7 +24,11 @@ export class LoginComponent implements OnInit {
   }
 
   capturarDados(){
-    console.log(this.userModel)
+    console.log(this.userModel);
+
+    console.log(this.userModel.nome);
+    console.log(this.userModel.email);
+    console.log(this.userModel.senha);
   }
   
 }
