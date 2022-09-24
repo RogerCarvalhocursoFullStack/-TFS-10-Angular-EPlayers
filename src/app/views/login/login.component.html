@@ -3,7 +3,7 @@
 
     <h1 class="titulo">Login</h1>
 
-    <form (ngSubmit)="capturarDados()">
+    <form (ngSubmit)="signin()">
         
         <div class="linha">
             <fa-icon [icon]="faUser"></fa-icon>
@@ -20,7 +20,7 @@
         <div class="linha">
            
             <fa-icon [icon]="faLock"></fa-icon>
-            <input type="password" id="Senha" placeholder="********" name="senha" [(ngModel)]="userModel.senha">
+            <input type="password" id="Senha" placeholder="********" name="senha" [(ngModel)]="userModel.password">
         </div>
 
             <p class="mensagem"></p>
