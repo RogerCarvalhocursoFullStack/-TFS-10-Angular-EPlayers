@@ -4,32 +4,32 @@
     <h1 class="titulo">Login</h1>
 
     <form (ngSubmit)="signin()">
-        
+
         <div class="linha">
             <fa-icon [icon]="faUser"></fa-icon>
             <input type="text" id="nome" placeholder="seu nome" name="nome" [(ngModel)]="userModel.nome">
         </div>
 
         <div class="linha">
-           
+
             <fa-icon [icon]="faEnvelope"></fa-icon>
             <input type="email" id="usuario" placeholder="Seu E-mail" name="usuario" [(ngModel)]="userModel.email">
         </div>
 
-        
+
         <div class="linha">
-           
+
             <fa-icon [icon]="faLock"></fa-icon>
             <input type="password" id="Senha" placeholder="********" name="senha" [(ngModel)]="userModel.password">
         </div>
 
-            <p class="mensagem"></p>
-        
-                    
-            <button class="signin" type="Submit">Sign in</button>
-        
-                  
-        
+        <p class="mensagem">{{mensagem}}</p>
+
+
+        <button class="signin" type="Submit">Sign in</button>
+
+
+
     </form>
 
 </div>

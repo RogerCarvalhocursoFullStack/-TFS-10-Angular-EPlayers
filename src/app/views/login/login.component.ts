@@ -10,6 +10,13 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
+  constructor(private userService: UserService) { }
+
+  ngOnInit(): void {
+  }
+
+  //nossas funcionalidades
   faUser = faUser
   faEnvelope = faEnvelope
   faLock = faLock
@@ -17,22 +24,45 @@ export class LoginComponent implements OnInit {
 
 // modelo/model
   userModel = new User() 
+  nomeprofessor : any = ""
+  mensagem: string = ""
 
-
-  constructor(private userService: UserService) { }
-
-  ngOnInit(): void {
-  }
+ 
 
   //funçao de login
   signin(){
     //fazer validação
     //console.log(this.userModel);
 
-    this.userService.sigin(this.userModel).subscribe(function(response){
-      console.log(response);
-      
-    })
+    
+
+    this.userService.sigin(this.userModel)
+    .subscribe( 
+      {
+        next: (response) => {
+          console.log(response);
+          this.mensagem = `Logado com Sucesso! ${response.status} ${response.statusText}` 
+      },
+      error: (e) => {
+        console.log('DEU RUIMMMMM ', e);
+        this.mensagem = `${e.error} ${e.status} ${e.statusText}`
+      }
+          
+      }
+    )
+ 
   }
-  
-}
+} // FIM DA CLASSE
+
+
+
+// nova forma de utilizar o subscribe segundo a biblioteca rxJS, utilizada com o service do Angular
+//subscribe({
+ // next: (v) => console.log(v),
+  //error: (e) => console.error(e),
+  //complete: () => console.info('complete')
+
+  //ARROW FUCTION
+//(params) => {
+  //açoes
+//}  
