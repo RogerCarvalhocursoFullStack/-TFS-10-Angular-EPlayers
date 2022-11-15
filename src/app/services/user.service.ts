@@ -23,7 +23,8 @@ export class UserService {
       {                       //options
         headers: new HttpHeaders ({"Content-Type": "application/json"}),
         observe: 'response'
-      } )
+      } 
+    )
   }
    //put
   //delete
