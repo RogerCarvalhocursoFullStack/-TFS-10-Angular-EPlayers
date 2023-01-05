@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "name": "Rogerio Luis de Carvalho",
+      "email": "rogerio@rogerio",
+      "password": "$2a$10$uEdGT/9RqOxYC16kuwIcWObrskIEoEKx6lbIDAn3/yXeLksrf5dtm",
+      "id": 1
+    },
+    {
+      "email": "cibele@yahoo.com",
+      "password": "$2a$10$9mZWri60QPds/tlfIcl2HOt53ehZxtlys9TDWdY2Y4YRo10mHhqPm",
+      "id": 2
+    }
+  ]
+}

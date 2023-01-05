@@ -75,7 +75,7 @@ export class LoginComponent implements OnInit {
           //console.log(response);
           this.mensagem = `Logado com Sucesso! ${response.status} ${response.statusText}` 
           //encaminahr para a rota home
-          this.router.navigate([''])
+          //this.router.navigate([''])
       },
       error: (e) => {
         //console.log('DEU RUIMMMMM ', e);
